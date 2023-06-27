@@ -4,6 +4,7 @@ from datetime import datetime
 
 today = datetime.now(timezone('Asia/Seoul'))
 
+print(f"현재 시각은 {today.hour}시입니다!")
 if today.hour < 12 :
     print('오전입니다!')
 else :
