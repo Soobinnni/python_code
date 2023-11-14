@@ -13,7 +13,7 @@
 # HelloWorld!
 
 # 내가 작성한 코드
-def result():
+def 문자열_출력하기():
     str = input()
     len_str = len(str)
     if 1 <= len_str <=1000000:
@@ -24,7 +24,7 @@ def result():
         print(oneline_str)
 
 # 새로 개선 : 불필요한 for문 대신, join() 내장 함수 사용
-def result2():
+def 문자열_출력하기2():
     str = input()
     len_str = len(str)
     if 1<=len_str<=1000000:
@@ -33,13 +33,10 @@ def result2():
         print(oneline_str)
 
 # 새로 개선 : 공백은 안 됨
-def result3():
+def 문자열_출력하기3():
     str = input()
     len_str = len(str)
     if 1<=len_str<=1000000 and len(str.strip()) != 0:
         strgr = str.strip().split(" ")
         oneline_str = "".join(strgr)
         print(oneline_str)
-
-if __name__ == "__main__" :
-    result3  ()
