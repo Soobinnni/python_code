@@ -17,6 +17,9 @@ from A_강조하기 import A_강조하기
 from n의_배수 import n의_배수
 from 공배수 import 공배수
 from 홀짝에_따라_다른_값_반환하기 import 홀짝에_따라_다른_값_반환하기, num_list_한줄로쓰기_홀짝에_따라_다른_값_반환하기, 남의_답_한줄로쓰기_홀짝에_따라_다른_값_반환하기
+from 조건_문자열 import 조건_문자열 
+from flag에_따라_다른_값_반환하기 import flag에_따라_다른_값_반환하기 
+from 코드_처리하기 import 코드_처리하기
 
 # from import 
 
@@ -43,5 +46,6 @@ if __name__ == "__main__" :
     # n의_배수(98, 2)
     # 공배수(60, 2, 3)
     # print(남의_답_한줄로쓰기_홀짝에_따라_다른_값_반환하기(6))
-    n=7
-    print(sum([x ** (int(n%2==0)+1) for x in range(n+1) if n % 2 == x % 2 ]))
+    # 조건_문자열("<", "=", 41, 81)
+    # flag에_따라_다른_값_반환하기(-4, 7, True)
+    코드_처리하기("abc1abc1abc")
