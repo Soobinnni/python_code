@@ -51,3 +51,14 @@ def 코드_처리하기(code):
             if mode and i % 2 == 1:
                 answer += c
     return answer if answer else 'EMPTY'
+
+
+
+# 주어진 코드에서 OR 문장은 
+# 첫 번째 부분인 "".join(code.split("1"))[::2]이 결과값이 
+# 비어있는 경우에 실행. 
+# 즉, "".join(code.split("1"))[::2]이 빈 문자열일 경우 
+# OR 연산자 뒤의 "EMPTY"가 실행되어 결과로 반환
+# (OR 연산자에서는 첫 번째 피연산자가 거짓일 때만 두 번째 피연산자가 평가되고 반환)
+def 다른_답_코드_처리하기(code):
+    return "".join(code.split("1"))[::2] or "EMPTY"
