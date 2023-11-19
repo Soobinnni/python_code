@@ -30,8 +30,9 @@
 # 따라서 4항만 true이므로 10을 return 합니다.
 
 def 등차수열의_특정한_항만_더하기(a, d, included):    
-    num_list = [ a + (i * d) for i, _ in enumerate(included) if included[i] ]
-    return sum(num_list)
+    # num_list = [ a + (i * d) for i, _ in enumerate(included) if included[i] ]
+    return sum(a + (i * d) for i, f in enumerate(included) if f )
+    # return sum(num_list)
 
 def 다른_사람_등차수열의_특정한_항만_더하기(a, d, included):
     answer = 0

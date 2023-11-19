@@ -21,6 +21,7 @@ from 조건_문자열 import 조건_문자열
 from flag에_따라_다른_값_반환하기 import flag에_따라_다른_값_반환하기 
 from 코드_처리하기 import 코드_처리하기
 from 등차수열의_특정한_항만_더하기 import 등차수열의_특정한_항만_더하기
+from 주사위_게임_2 import 주사위_게임_2
 
 # from import 
 
@@ -52,4 +53,9 @@ if __name__ == "__main__" :
         # 코드_처리하기("abc1abc1abc")
     
     #2023/11/18
-    등차수열의_특정한_항만_더하기(3, 4, [True, False, False, True, True])
+        # 등차수열의_특정한_항만_더하기(3, 4, [True, False, False, True, True])
+
+    #2023/11/19
+    주사위_게임_2(2, 6, 1)
+    li = set([1, 1, 3])
+    print(len(li))
