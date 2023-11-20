@@ -8,3 +8,8 @@ def 주사위_게임_2(a, b, c):
         
     if l == 3:
         answer = (a + b + c)
+        
+from math import prod
+
+def 두번째_생각해본_답_주사위_게임_2(a, b, c):
+    return prod(((a ** (i + 1)) + (b ** (i + 1)) + (c ** (i + 1))) for i in range( 4 - len(set([a,b,c]))))
