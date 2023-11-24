@@ -26,4 +26,18 @@
 # 입출력 예 #1은 "수 조작하기 1" 문제의 입출력 예 #1과 같은 예시이므로 참고하시기 바랍니다.
 
 def 수_조작하기_2(numLog):
-    pass
+    char_int = dict(zip([1, -1, 10, -10], ["w", "s", "d", "a"]))
+    char = ""
+    for i, _ in enumerate(numLog):
+        if i > 0:
+            char += char_int[(numLog[i]-numLog[i-1])]
+        
+    return char
+
+def 다른_사람_풀이수_조작하기_2(numLog):
+    char_int = dict(zip([1, -1, 10, -10], ["w", "s", "d", "a"]))
+    char = ""
+    for i in range(1, len(numLog)):
+        char += char_int[(numLog[i]-numLog[i-1])]
+        
+    return char
