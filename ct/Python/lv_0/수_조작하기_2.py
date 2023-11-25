@@ -41,3 +41,9 @@ def 다른_사람_풀이수_조작하기_2(numLog):
         char += char_int[(numLog[i]-numLog[i-1])]
         
     return char
+
+def 재영이_풀이수_조작하기_2(numLog):
+    char_int = dict(zip([1, -1, 10, -10], ["w", "s", "d", "a"]))
+    return "".join(char_int[(numLog[i]-numLog[i-1])] for i in range(1, len(numLog)))
+
+def 더_줄이기_풀이수_조작하기_2(numLog, char_int = dict(zip([1, -1, 10, -10], ["w", "s", "d", "a"]))): return "".join(char_int(numLog[i] - numLog[i-1]) for i in range(1, len(numLog)))

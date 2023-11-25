@@ -27,8 +27,37 @@ from 이어_붙인_수 import 이어_붙인_수
 from 마지막_두_원소 import 마지막_두_원소
 from 수_조작하기_1 import 수_조작하기_1
 from 수_조작하기_2 import 수_조작하기_2
+from 평행 import 평행
+from 최빈값_구하기 import 최빈값_구하기
+from 수열과_구간_쿼리_3 import 수열과_구간_쿼리_3
 
-# from import 
+# from  import 
+
+def def_naming(file_name):
+    return "".join(("" if i == 0 else "_") + a for i, a in enumerate(file_name.split()))
+    
+def add_from_import_sts_and_call_func_sts(func_name):
+    main_file_path = "./ct/Python/lv_0/main.py"
+    with open(main_file_path, 'r', encoding="UTF-8") as file:
+        lines = file.readlines()
+    last_import_index = 0
+    for i, line in enumerate(lines):
+        if line.startswith("from ") and " import " in line:
+            last_import_index = i
+    lines.insert(last_import_index + 1, f"from {func_name} import {func_name}" + '\n')
+    lines.append(f"\n\t{func_name}()")
+
+    with open(main_file_path, 'w', encoding="UTF-8") as file:
+        file.writelines(lines)
+
+def create_new_file(file_name):
+    file_name_func_name = def_naming(file_name)
+
+    f = open(f"./ct/Python/lv_0/{file_name_func_name}.py", 'w', encoding="UTF-8")
+    f.write(f"""def {file_name_func_name}():\n\tpass""")
+    f.close()
+    
+    add_from_import_sts_and_call_func_sts(file_name_func_name)
 
 if __name__ == "__main__" :
     # 2023/11/14
@@ -73,5 +102,12 @@ if __name__ == "__main__" :
     #2023/11/22
         # 수_조작하기_1(0, "wsdawsdassw")
 
-    #2023/11/23
-    수_조작하기_2([0, 1, 0, 10, 0, 1, 0, 10, 0, -1, -2, -1])
+    #2023/11/24
+        # 수_조작하기_2([0, 1, 0, 10, 0, 1, 0, 10, 0, -1, -2, -1])
+
+    #2023/11/25
+    # 평행([[1, 4], [9, 2], [3, 8], [11, 6]])
+    # 최빈값_구하기([1, 2, 3, 3, 3, 4])
+    수열과_구간_쿼리_3([0, 1, 2, 3, 4], [[0, 3],[1, 2],[1, 4]])
+    
+    create_new_file("수열과 구간 쿼리 3")
