@@ -32,6 +32,6 @@ def 수열과_구간_쿼리_3(arr, queries):
     return arr
 
 def 다른_사람_풀이_수열과_구간_쿼리_3(arr, queries):
-    for a, b in queries:
-        arr[a], arr[b] = arr[b], arr[a]
+	for a, b in queries:
+		arr[a], arr[b] = arr[b], arr[a]
 	return arr
