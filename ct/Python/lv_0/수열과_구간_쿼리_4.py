@@ -33,10 +33,9 @@ def 수열과_구간_쿼리_4(arr, queries):
         
     return arr
 
-def 다른_사람_풀이_수열과_구간_쿼리_4(arr, queries):
-    for s, e, k in queries:
-        for i in range(s, (e+1)):
-            if i % k == 0:
-                arr[i] += 1
-                
-	return arr
+# def 다른_사람_풀이_수열과_구간_쿼리_4(arr, queries):
+#     for s, e, k in queries:
+#         for i in range(s, (e+1)):
+#             if i % k == 0:
+#                 arr[i] += 1
+# 	return arr

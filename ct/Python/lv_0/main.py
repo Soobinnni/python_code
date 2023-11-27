@@ -32,6 +32,8 @@ from 최빈값_구하기 import 최빈값_구하기
 from 수열과_구간_쿼리_3 import 수열과_구간_쿼리_3
 from 수열과_구간_쿼리_2 import 수열과_구간_쿼리_2
 from 수열과_구간_쿼리_4 import 수열과_구간_쿼리_4
+from 배열_만들기_2 import 배열_만들기_2
+from 주사위_게임_3 import 주사위_게임_3
 
 # from  import 
 
@@ -115,5 +117,7 @@ if __name__ == "__main__" :
 	
     #2023/11/26
     # 수열과_구간_쿼리_4([0, 1, 2, 4, 3], [[0, 4, 1],[0, 3, 2],[0, 3, 3]])
-    print(list(range(1,3)))
+	# 배열_만들기_2(5, 555)
+    # print(1 in {"a":1}.values())
+	print(주사위_게임_3(4,1,4,4))
     # create_new_file("")
