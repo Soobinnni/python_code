@@ -45,6 +45,7 @@ from 배열_만들기_5 import 배열_만들기_5
 from 부분_문자열_이어_붙여_문자열_만들기 import 부분_문자열_이어_붙여_문자열_만들기
 from 문자열의_뒤의_n글자 import 문자열의_뒤의_n글자
 from 접미사_배열 import 접미사_배열
+from 접미사인지_확인하기 import 접미사인지_확인하기
 
 # from  import 
 
@@ -149,5 +150,8 @@ if __name__ == "__main__" :
         # 부분_문자열_이어_붙여_문자열_만들기(["progressive", "hamburger", "hammer", "ahocorasick"], [[0, 4], [1, 2], [3, 5], [7, 7]])
         # 문자열의_뒤의_n글자("ProgrammerS123", 11)
         # 접미사_배열("banana")
+
+    #2023/12/02
+	접미사인지_확인하기("banana", "ana")
 
     # create_new_file("")
