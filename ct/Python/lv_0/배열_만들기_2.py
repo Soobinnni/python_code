@@ -18,4 +18,8 @@
 # 10 이상 20 이하이면서 0과 5로만 이루어진 정수는 없습니다. 따라서 [-1]을 return 합니다.
 
 def 배열_만들기_2(l, r):
-	pass
+      answer = []
+      for num in range(l, r+1):
+            if not set(str(num)) - {'0', '5'}: # 차집합이 없을 때 not연산자로 True
+                  answer.append(num)
+      return answer if answer else [-1]

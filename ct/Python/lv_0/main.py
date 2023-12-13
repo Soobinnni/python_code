@@ -46,8 +46,9 @@ from 부분_문자열_이어_붙여_문자열_만들기 import 부분_문자열_
 from 문자열의_뒤의_n글자 import 문자열의_뒤의_n글자
 from 접미사_배열 import 접미사_배열
 from 접미사인지_확인하기 import 접미사인지_확인하기
-
-# from  import 
+from 문자열의_앞의_n글자 import 문자열의_앞의_n글자
+from 접두사인지_확인하기 import 접두사인지_확인하기
+from 문자열_뒤집기 import 문자열_뒤집기
 
 def def_naming(file_name):
     return "".join(("" if i == 0 else "_") + a for i, a in enumerate(file_name.split()))
@@ -76,6 +77,12 @@ def create_new_file(file_name):
     add_from_import_sts_and_call_func_sts(file_name_func_name)
 
 if __name__ == "__main__" :
+    # 2023/11/8
+	    # 접두사인지_확인하기("banana", "ban")
+    
+    # 2023/11/11
+		# 문자열_뒤집기("Progra21Sremm3", 6, 12)
+    
     # 2023/11/14
         # 문자열_출력하기3()
         # a와_b_출력하기()
@@ -129,7 +136,6 @@ if __name__ == "__main__" :
 	
     #2023/11/26
         # 수열과_구간_쿼리_4([0, 1, 2, 4, 3], [[0, 4, 1],[0, 3, 2],[0, 3, 3]])
-        # 배열_만들기_2(5, 555)
 	
     #2023/11/27
         # 주사위_게임_3(4,1,4,4)
@@ -151,7 +157,10 @@ if __name__ == "__main__" :
         # 문자열의_뒤의_n글자("ProgrammerS123", 11)
         # 접미사_배열("banana")
 
-    #2023/12/02
-	접미사인지_확인하기("banana", "ana")
+    #2023/12/2
+	# 접미사인지_확인하기("banana", "ana")
+
+    #2023/12/13
+    # 배열_만들기(5, 555)
 
     # create_new_file("")
