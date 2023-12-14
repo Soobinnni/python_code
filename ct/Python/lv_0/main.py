@@ -158,9 +158,12 @@ if __name__ == "__main__" :
         # 접미사_배열("banana")
 
     #2023/12/2
-	# 접미사인지_확인하기("banana", "ana")
+	    # 접미사인지_확인하기("banana", "ana")
 
     #2023/12/13
-    # 배열_만들기(5, 555)
+        # 배열_만들기(5, 555)
 
-    # create_new_file("")
+    #2023/12/14
+        # 옹알이1(["ayaye", "uuuma", "ye", "yemawoo", "ayaa"])
+        
+    # create_new_file()
