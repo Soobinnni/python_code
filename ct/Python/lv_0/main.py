@@ -49,6 +49,7 @@ from 접미사인지_확인하기 import 접미사인지_확인하기
 from 문자열의_앞의_n글자 import 문자열의_앞의_n글자
 from 접두사인지_확인하기 import 접두사인지_확인하기
 from 문자열_뒤집기 import 문자열_뒤집기
+from 정수를_나선형으로_배치하기 import 정수를_나선형으로_배치하기
 
 def def_naming(file_name):
     return "".join(("" if i == 0 else "_") + a for i, a in enumerate(file_name.split()))
@@ -165,5 +166,8 @@ if __name__ == "__main__" :
 
     #2023/12/14
         # 옹알이1(["ayaye", "uuuma", "ye", "yemawoo", "ayaa"])
-        
-    # create_new_file()
+
+    #2023/12/14
+    # 	정수를_나선형으로_배치하기(3)
+
+    # create_new_file("")
