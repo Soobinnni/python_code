@@ -2,7 +2,7 @@ t = int(input())
 
 for test_case in range(1, t+1):
     n, m = map(int, input().split())
-    balloons = [list(map(int, input().split())) for num in range(n)]
+    balloons = [list(map(int, input().split())) for _ in range(n)]
     ans = -1
     pollen = 0
 
