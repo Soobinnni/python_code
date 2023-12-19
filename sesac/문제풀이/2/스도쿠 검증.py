@@ -11,7 +11,7 @@ def check_duplicate(idx):
 
 for test_case in range(1, int(input())+1):
     sudoku = [list(map(int, input().split())) for _ in range(9)]
-    column_sudoku = list(map(list, zip(*sudoku)))
+    column_sudoku = list(zip(*sudoku))
     ans = 0
 
     for i in range(9):
