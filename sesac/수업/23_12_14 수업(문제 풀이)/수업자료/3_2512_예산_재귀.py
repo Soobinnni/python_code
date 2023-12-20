@@ -21,10 +21,10 @@ def binary_search(l, r):
         else:
             budget += c
 
-    if budget > M:
+    if budget <= M:
+        return binary_search(c + 1, r)
+    else:
         return binary_search(l, c - 1)
 
-    else:
-        return binary_search(c + 1, r)
 
 print(binary_search(0, max(reqs)))
