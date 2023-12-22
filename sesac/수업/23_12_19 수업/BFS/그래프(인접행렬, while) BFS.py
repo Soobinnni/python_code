@@ -1,3 +1,5 @@
+from collections import deque
+
 V, E = map(int, input().split())
 
 adj_matrix = [[0] * (V+1) for _ in range(V+1)]
@@ -8,10 +10,13 @@ for _ in range(V+1):
     adj_matrix[end][start] = 1
 
 visited = []
-Q = [1]
+# Q = [0]
+Q = deque()
+Q.append(1)
 
 while Q:
-    cur = Q.pop(0)
+    # cur = Q.pop(0)
+    cur = Q.popleft()
     if cur not in visited: visited.append(cur)
 
     for destination in range(V+1):
