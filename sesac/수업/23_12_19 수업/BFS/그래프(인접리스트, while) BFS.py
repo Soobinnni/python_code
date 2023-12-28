@@ -20,6 +20,7 @@ while Q:
     if cur not in visited: visited.append(cur)
 
     for destination in adj_matrix[cur]:
-        if destination not in visited: Q.append(destination)
+        if destination not in visited:
+            Q.append(destination)
 
 print(f"탐색 순서: {visited}")
