@@ -34,7 +34,7 @@ while Q:
 
         for dr, dc in [(-1, 0), (1, 0), (0, -1), (0, 1)]:
             nr, nc = r + dr, c + dc
-            if 0 <= nr < N and 0 <= nc < M and tomatoes[nr][nc] not in (1, -1):
+            if 0 <= nr < N and 0 <= nc < M and tomatoes[nr][nc] == 0:
                 Q.append((nr, nc))
                 tomatoes[nr][nc] = 1 # 기록(visited)
     dis += 1
