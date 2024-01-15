@@ -51,6 +51,7 @@ from 접두사인지_확인하기 import 접두사인지_확인하기
 from 문자열_뒤집기 import 문자열_뒤집기
 from 정수를_나선형으로_배치하기 import 정수를_나선형으로_배치하기
 from 겹치는_선분의_길이 import 겹치는_선분의_길이
+from 분수의_덧셈 import 분수의_덧셈
 
 def def_naming(file_name):
     return "".join(("" if i == 0 else "_") + a for i, a in enumerate(file_name.split()))
@@ -170,6 +171,6 @@ if __name__ == "__main__" :
 
     #2023/12/14
     # 	정수를_나선형으로_배치하기(3)
-	겹치는_선분의_길이([[0, 1], [2, 5], [3, 9]])
+	# 겹치는_선분의_길이([[0, 1], [2, 5], [3, 9]])
 
-    # create_new_file("")
+    create_new_file("")
