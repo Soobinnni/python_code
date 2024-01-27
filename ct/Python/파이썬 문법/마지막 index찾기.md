@@ -1,0 +1,1 @@
+len(arr) - arr[::-1].index(찾는 요소)
